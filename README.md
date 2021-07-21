@@ -8,12 +8,11 @@
 6) IBM Automation Document Processing (Selected)
 
 ## Table of Contents
-### Introduction
-### Pre-requisites(20.x)
-### Evaluation Deployment steps version 20.x
-### Evaluation deployment steps version 21.x
-### Verify Deployment
-
+Introduction
+Pre-requisites(20.x)
+Evaluation Deployment steps version 20.x
+Evaluation deployment steps version 21.x
+Verify Deployment
 
 ### Introduction
 IBM Cloud Pak for Business Automation is a set of integrated market-leading software designed to help you solve your toughest operational challenges. With AI-generated recommendations, analytics to measure impact, and business-friendly low-code tooling, we've helped clients reduce the amount of time spent on manual processes by 90%¹ and decreased customer wait times by half². You can now better comply with regulations to reduce risk and save thousands of work hours that can then be reallocated to higher value work³.
@@ -25,7 +24,8 @@ IBM Cloud Pak for Business Automation is a set of integrated market-leading soft
 2) You will require registry key. It can be obtained using following link.</br>
    <a href=https://myibm.ibm.com/products-services/containerlibrary> Generate Registry Key </a>
 
-### Evaluation Deployment steps version 20.x
+### Phase - 01 : Setup Cluster
+
    1) Login to ROKS Cluster
    2) Clone Git Repository
       ```console
@@ -61,4 +61,39 @@ IBM Cloud Pak for Business Automation is a set of integrated market-leading soft
             cp4a-file-retain-bronze-gid
             cp4a-file-retain-silver-gid
             cp4a-file-retain-gold-gid
-       
+   
+   ### Phase - 02 : Deploy Capabilities
+   1) Run deployment scripts
+   ```console
+      ./cp4a-deployment.sh
+   ```
+   Note : Wen prompt, press any key to continue
+   2) Do you accept the IBM Cloud Pak for Automation license (Yes/No, default: No): Yes </br>
+   3) Do you accept (Yes/No, default: No): Yes </br>
+   4) Password: (Enter your pc login password)</br>
+   5) Is this a new installation or an existing installation?</br>
+      1) New
+      2) Existing</br>
+   6) Are you using the OCP Catalog (OLM) to perform this install? (Yes/No, default: No): No</br>
+   7) What type of deployment is being performed?</br>
+      1) Demo</br>
+      2) Enterprise</br>
+   8) Select the cloud platform to deploy:</br>
+      1) RedHat OpenShift Kubernetes Service (ROKS) - Public Cloud</br>
+      2) Openshift Container Platform (OCP) - Private Cloud</br>
+   9) Select the Cloud Pak for Automation capability to install:</br>
+      1) FileNet Content Manager</br>
+      2) Operational Decision Manager</br>
+      3) Automation Decision Services</br>
+      4) Business Automation Application</br>
+      5) Business Automation Workflow and Automation Workstream Services</br>
+      6) IBM Automation Document Processing</br>
+      Note: Press entry multiple times, if you have selected your capabilities.</br>
+  10) Do you have a Cloud Pak for Automation Entitlement Registry key (Yes/No, default: No): Yes</br>
+  11) Enter your Entitlement Registry key: <copy the registry key here></br>
+  12) Input the host name: <copy the hostname here></br>
+  13) Please enter the dynamic storage classname for slow storage: <copy storage class here> eg. cp4a-file-retain-bronze-gid</br>
+  14) Please enter the dynamic storage classname for slow storage: <copy storage class here> eg. cp4a-file-retain-bronze-gid</br>
+  15) Please enter the dynamic storage classname for slow storage: <copy storage class here> eg. cp4a-file-retain-bronze-gid</br>
+  16) To make changes, enter "No" (default: No): Yes</br>
+   
