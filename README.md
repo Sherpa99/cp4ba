@@ -24,7 +24,8 @@ IBM Cloud Pak for Business Automation is a set of integrated market-leading soft
 2. You will require registry key. It can be obtained using following link.</br>
    <a href=https://myibm.ibm.com/products-services/containerlibrary> Generate Registry Key </a>
 
-### Phase - 01 : Setup Cluster
+
+## Phase - 01 : Setup Admin Cluster
 
  1. Login to ROKS Cluster
  2. Clone Git Repository
@@ -62,7 +63,7 @@ IBM Cloud Pak for Business Automation is a set of integrated market-leading soft
             cp4a-file-retain-silver-gid </br>
             cp4a-file-retain-gold-gid </br>
    
-### Phase - 02 : Deploy Capabilities
+## Phase - 02 : Deploy Capabilities
 1. Run deployment scripts
    ```console
       ./cp4a-deployment.sh
@@ -97,4 +98,10 @@ Note: Press entry multiple times, if you have selected your capabilities.</br>
 14. Please enter the dynamic storage classname for slow storage: <copy storage class here> eg. cp4a-file-retain-bronze-gid</br>
 15. Please enter the dynamic storage classname for slow storage: <copy storage class here> eg. cp4a-file-retain-bronze-gid</br>
 16. To make changes, enter "No" (default: No): Yes</br>
-   
+
+## Phase - 03 : Post Deployment 
+1. Run the post deployment script to get URLs and login crendials
+   ```console
+      ./cp4a-post-deployment.sh
+   ```
+2. Browse the require URLs with provided credentials to test the dashboard
