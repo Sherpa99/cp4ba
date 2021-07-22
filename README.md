@@ -10,8 +10,9 @@
 ## Table of Contents
 1. Introduction
 2. Pre-requisites(20.x)
-3. Evaluation Deployment steps version 20.x
-4. Verify Deployment
+3. Part One : Setup Admin Cluster
+4. Part Two : Deploy Capabilites
+5. Part Three : Generate URLs and Login Credentials
 
 ### Introduction
 IBM Cloud Pak for Business Automation is a set of integrated market-leading software designed to help you solve your toughest operational challenges. With AI-generated recommendations, analytics to measure impact, and business-friendly low-code tooling, we've helped clients reduce the amount of time spent on manual processes by 90%¹ and decreased customer wait times by half². You can now better comply with regulations to reduce risk and save thousands of work hours that can then be reallocated to higher value work³.
@@ -24,7 +25,7 @@ IBM Cloud Pak for Business Automation is a set of integrated market-leading soft
    - [Generate Registry Key](https://myibm.ibm.com/products-services/containerlibrary)
 
 
-## Phase - 01 : Setup Admin Cluster
+## Part One : Setup Admin Cluster
 
  1. Login to ROKS Cluster
  2. Clone Git Repository
@@ -47,8 +48,10 @@ IBM Cloud Pak for Business Automation is a set of integrated market-leading soft
        _(1) Demo </br>
        (2) Enterprise_ </br>
 7. Here are the existing users on this cluster: </br>
-       _(1) IAM#gyalgin.sherpa@ibm.com ( Note: You will see your details displayed and select :1)_ </br>
-8. Create storage classes for deployment: Done ( Note: Storage class will be automatically created)
+       _(1) IAM#gyalgin.sherpa@ibm.com_ </br>
+       _Enter an existing username in your cluster, valid option [1 to 1], non-admin is suggested:_ `1`
+8. Create storage classes for deployment: Done </br>
+   `( Note: Storage class will be automatically created)`
 9. Take note of the host name or you can get one using following commands
  ```console
         oc get route console -n openshift-console -o yaml|grep routerCanonicalHostname
@@ -62,7 +65,7 @@ IBM Cloud Pak for Business Automation is a set of integrated market-leading soft
             cp4a-file-retain-silver-gid </br>
             cp4a-file-retain-gold-gid_ </br>
    
-## Phase - 02 : Deploy Capabilities
+## Part Two : Deploy Capabilities
 1. Run deployment scripts
    ```console
       ./cp4a-deployment.sh
@@ -91,14 +94,14 @@ IBM Cloud Pak for Business Automation is a set of integrated market-leading soft
 > Note: Press entry multiple times, if you have selected your capabilities.</br>
 
 10. Do you have a Cloud Pak for Automation Entitlement Registry key (Yes/No, default: No): `Yes`</br>
-11. Enter your Entitlement Registry key: `<copy the registry key here>`</br>
-12. Input the host name: `<copy the hostname here>`</br>
-13. Please enter the dynamic storage classname for slow storage: `<copy storage class here>` </br>
-14. Please enter the dynamic storage classname for slow storage: `<copy storage class here>` </br>
-15. Please enter the dynamic storage classname for slow storage: `<copy storage class here>` </br>
+11. Enter your Entitlement Registry key: `<copy the registry key here> refer to Pre-requisites point #2`</br>
+12. Input the host name: `<copy the hostname here>refer to Part One point #9`</br>
+13. Please enter the dynamic storage classname for slow storage: `<copy storage class here> refer to Part One point #10` </br>
+14. Please enter the dynamic storage classname for slow storage: `<copy storage class here> refer to Part One point #10` </br>
+15. Please enter the dynamic storage classname for slow storage: `<copy storage class here> refer to Part One point #10` </br>
 16. To make changes, enter "No" (default: No): `Yes`</br>
 
-## Phase - 03 : Post Deployment 
+## Part Three : Generate URLs & Login Credentials 
 1. Run the post deployment script to get URLs and login crendials
    ```console
       ./cp4a-post-deployment.sh
