@@ -97,11 +97,12 @@ IBM Cloud Pak for Business Automation is a set of integrated market-leading soft
 11. Enter your Entitlement Registry key: `<copy the registry key here> refer to Pre-requisites point #2`</br>
 12. Input the host name: `<copy the hostname here>refer to Part One point #9`</br>
 13. Please enter the dynamic storage classname for slow storage: `<copy storage class here> refer to Part One point #10` </br>
-14. Please enter the dynamic storage classname for slow storage: `<copy storage class here> refer to Part One point #10` </br>
-15. Please enter the dynamic storage classname for slow storage: `<copy storage class here> refer to Part One point #10` </br>
+14. Please enter the dynamic storage classname for medium storage: `<copy storage class here> refer to Part One point #10` </br>
+15. Please enter the dynamic storage classname for fast storage: `<copy storage class here> refer to Part One point #10` </br>
 16. To make changes, enter "No" (default: No): `Yes`</br>
 
 ## Part Three : Generate URLs & Login Credentials 
+> Note: Pleas wait about 3-4 hours to complete the installation before executing the post deployment script.</br>
 1. Run the post deployment script to get URLs and login crendials
    ```console
       ./cp4a-post-deployment.sh
