@@ -1,4 +1,4 @@
-# Cloud Pak For Business Automation Installation
+# Cloud Pak For Business Automation Installation - Demo Version
 ## CP4BA Components
 1) FileNet Content Manager 
 2) Operational Decision Manager 
