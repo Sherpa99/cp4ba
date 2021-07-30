@@ -9,5 +9,5 @@
 
 Version
 1. [20.0.3](https://github.com/Sherpa99/cp4ba/blob/main/23.0.3)
-2. [20.0.2](https://github.com/Sherpa99/cp4ba/blob/main/21.0.1)
-2. [20.0.2](https://github.com/Sherpa99/cp4ba/blob/main/21.0.2)
+2. [20.0.1](https://github.com/Sherpa99/cp4ba/blob/main/21.0.1)
+3. [20.0.2](https://github.com/Sherpa99/cp4ba/blob/main/21.0.2)
