@@ -1,31 +1,6 @@
-# Cloud Pak For Business Automation Installation - Demo Version
-## CP4BA Components
-1) FileNet Content Manager 
-2) Operational Decision Manager 
-3) Automation Decision Services 
-4) Business Automation Application 
-5) Business Automation Workflow and Automation Workstream Services
-6) IBM Automation Document Processing
+# Cloud Pak For Business Automation 20.0.3 - Installation steps
 
-## Table of Contents
-1. Introduction
-2. Pre-requisites(20.x)
-3. Part One : Setup Admin Cluster
-4. Part Two : Deploy Capabilites
-5. Part Three : Generate URLs and Login Credentials
-
-### Introduction
-IBM Cloud Pak for Business Automation is a set of integrated market-leading software designed to help you solve your toughest operational challenges. With AI-generated recommendations, analytics to measure impact, and business-friendly low-code tooling, we've helped clients reduce the amount of time spent on manual processes by 90%¹ and decreased customer wait times by half². You can now better comply with regulations to reduce risk and save thousands of work hours that can then be reallocated to higher value work³.
-
-### Pre-requisites(20.x)
-1. Create ROKS Cluster </br>
-   - You will need at least 3 worker nodes 8x32 </br>
-   - [Review Cluster Requirements](https://www.ibm.com/docs/en/cloud-paks/cp-biz-automation/20.0.x?topic=deployment-identifying-infrastructure-requirements)
-2. You will require registry key. It can be obtained using following link.</br>
-   - [Generate Registry Key](https://myibm.ibm.com/products-services/containerlibrary)
-
-
-## Part One : Setup Admin Cluster
+## Step 01 : Setup Admin Cluster
 
  1. Login to ROKS Cluster
  2. Clone Git Repository
@@ -65,7 +40,7 @@ IBM Cloud Pak for Business Automation is a set of integrated market-leading soft
             cp4a-file-retain-silver-gid </br>
             cp4a-file-retain-gold-gid_ </br>
    
-## Part Two : Deploy Capabilities
+## Step 02 : Deploy Capabilities
 1. Run deployment scripts
    ```console
       ./cp4a-deployment.sh
@@ -101,7 +76,7 @@ IBM Cloud Pak for Business Automation is a set of integrated market-leading soft
 15. Please enter the dynamic storage classname for fast storage: `<copy storage class here> refer to Part One point #10` </br>
 16. To make changes, enter "No" (default: No): `Yes`</br>
 
-## Part Three : Generate URLs & Login Credentials 
+## Step 03 : Generate URLs & Login Credentials 
 > Note: Pleas wait about 3-4 hours to complete the installation before executing the post deployment script.</br>
 1. Run the post deployment script to get URLs and login crendials
    ```console
