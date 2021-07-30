@@ -1,4 +1,4 @@
-# Cloud Pak For Business Automation - Demo Version installation steps
+# CP4BA - Demo Version installation steps
 
 ## CP4BA Components
 1) FileNet Content Manager 
