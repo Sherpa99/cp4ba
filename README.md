@@ -28,4 +28,4 @@ IBM Cloud Pak for Business Automation is a set of integrated market-leading soft
 Version
 1. [20.0.3](20.0.3.md)
 2. [20.0.1](21.0.1.md)
-3. [20.0.2](21.0.2.md)
+3. [20.0.2](21.0.2.md) work in progress - steps not completed yet!
