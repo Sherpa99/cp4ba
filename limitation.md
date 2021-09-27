@@ -39,3 +39,4 @@ spec:
  ```
  5. Make changes on cluster_role.yaml and cluster_role_binding.yaml with cluster `<namespace>`
  6. [IBM Support for Limitation](https://www.ibm.com/support/pages/node/6426995/#v10-apic-support)
+ 7. [GitHub Support Limititation](https://github.ibm.com/dte-support/public/blob/master/CloudPaks/cp4ba-db2-install-issue-work-around.md)
