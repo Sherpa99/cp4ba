@@ -2,6 +2,7 @@
 
 1. Automation UI Configuration
 ```console apiVersion: core.automation.ibm.com/v1beta1
+apiVersion: core.automation.ibm.com/v1beta1
 kind: AutomationUIConfig
 metadata:
   namespace: cnsi-baw-21-0-1
